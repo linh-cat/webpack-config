@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAAA,KACI,qBAAsB","sources":["webpack://setup-react-webpack/./src/App.css"],"sourcesContent":["body {\r\n    background-color: pink;\r\n}"],"names":[],"sourceRoot":""}
