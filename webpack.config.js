@@ -1,10 +1,12 @@
 const path = require('path');
-
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-
+let mode = "development"
+if (process.env.NODE_ENV === "production") {
+    mode = "production"
+}
 module.exports = {
-    mode: "production",
+    mode: mode,
     entry: path.resolve(__dirname, './src/index.js'),
     devtool: "source-map",
     module: {
@@ -16,10 +18,9 @@ module.exports = {
             },
             {
                 test: /\.(css)$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
             }
         ],
-
     },
     resolve: {
         extensions: ['*', '.js', '.jsx'],
@@ -29,8 +30,12 @@ module.exports = {
         path: path.resolve(__dirname, './public'),
         filename: 'bundle.js',
     },
-    // devServer: {
-    //     contentBase: path.resolve(__dirname, './public'),
-    //     hot: true
-    // },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'public'),
+        },
+        compress: true,
+        port: 9000,
+        hot: true,
+    },
 };

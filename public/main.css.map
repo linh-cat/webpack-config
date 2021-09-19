@@ -1,1 +1,1 @@
-{"version":3,"file":"main.css","mappings":"AAAA,KACI,qBAAsB","sources":["webpack://setup-react-webpack/./src/App.css"],"sourcesContent":["body {\r\n    background-color: pink;\r\n}"],"names":[],"sourceRoot":""}
+{"version":3,"file":"main.css","mappings":";;;AAAA;IACI,sBAAsB;AAC1B;;AAEA;IACI,eAAe;IACf,iBAAiB;AACrB,C","sources":["webpack://setup-react-webpack/./src/App.css"],"sourcesContent":["body {\r\n    background-color: aqua;\r\n}\r\n\r\ndiv {\r\n    font-size: 30px;\r\n    font-weight: bold;\r\n}"],"names":[],"sourceRoot":""}

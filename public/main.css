@@ -1,4 +1,13 @@
-body{background-color:pink}
+/*!***************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/App.css ***!
+  \***************************************************************/
+body {
+    background-color: aqua;
+}
 
+div {
+    font-size: 30px;
+    font-weight: bold;
+}
 
 /*# sourceMappingURL=main.css.map*/
